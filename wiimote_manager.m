@@ -318,7 +318,7 @@ int bindings[maxNumWiimotes][WiiNumberOfButtons] = {
 - (IBAction)setIsUsingKBEmu:(id)sender
 {
 	if (sender == self.KBEnabledButton) {
-		[self.keyTable selectRowIndexes:nil byExtendingSelection:NO];
+//		[self.keyTable selectRowIndexes:nil byExtendingSelection:NO];
 		_isSettingPreferences = NO;
 		if ([self.KBEnabledButton state] == NSOnState) {
 			[self setTable:self.keyTable isEnabled:YES];
@@ -487,7 +487,7 @@ int bindings[maxNumWiimotes][WiiNumberOfButtons] = {
 			}
 			bindings[cID][type] = key_code;  // set the number in the bindings array
 			[self.prefHelpText setStringValue:prefHelpString];
-			[self.keyTable selectRowIndexes:nil byExtendingSelection:NO];
+//			[self.keyTable selectRowIndexes:nil byExtendingSelection:NO];
 			[self.prefHelpText setStringValue:prefHelpString];
 			[self.prefHelpText setTextColor:[NSColor controlTextColor]];
 			[self.keyTable reloadData]; // set the button string in the view

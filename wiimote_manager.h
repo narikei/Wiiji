@@ -10,7 +10,7 @@
 
 #import <Cocoa/Cocoa.h>
 #import <WiiRemote/WiiRemoteDiscovery.h>
-#include <wiimote_types.h>
+#include "wiimote_types.h"
 
 #define kMyDriversIOKitClassName 	"com_veltrop_taylor_driver_virtualhid"
 #define maxNumWiimotes					4
